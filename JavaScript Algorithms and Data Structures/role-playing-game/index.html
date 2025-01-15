@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple RPG</title>
+  <link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Simple RPG</h1>
+    <div class="stats">
+      <div id="playerStats">Player: 100 HP</div>
+      <div id="enemyStats">Enemy: 100 HP</div>
+    </div>
+    <div class="actions">
+      <button onclick="attack()">Attack</button>
+      <button onclick="heal()">Heal</button>
+      <button onclick="resetGame()">Restart</button>
+    </div>
+    <div class="log" id="log"></div>
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>

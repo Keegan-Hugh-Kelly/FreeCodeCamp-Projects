@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradebook App</title>
+  <link href rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <h1>Gradebook App</h1>
+  <div>
+    <input type="text" id="studentName" placeholder="Student Name">
+    <input type="number" id="studentGrade" placeholder="Grade (0-100)" min="0" max="100">
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Grade</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="gradebookBody">
+      <!-- Student rows will go here -->
+    </tbody>
+  </table>
+  <div class="summary" id="summary"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
